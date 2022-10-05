@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados do cliente</title>
+</head>
+<body>
+  
+
+  <main>
+    <h1>Dados pessoais</h1>
+    <form>
+      <fieldset>
+        <div>
+          <label for="nome">Nome</label>
+          <input autofocus minlength="2" maxlength="50" type="text" required name="nome" id="nome" placeholder="Informe seu nome">
+        </div>
+  
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required placeholder="Informe seu email">
+        </div>
+  
+  
+        <div>
+          <label for="cpf">CPF</label>
+          <input pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+         type="text" name="cpf" id="cpf" required placeholder="Informe seu CPF">
+        </div>
+  
+        <div>
+          <label for="idade">Idade</label>
+          <input type="number" name="idade" required id="idade" required placeholder="Informe sua idade">
+        </div>
+  
+  
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" required name="telefone" id="telefone" required placeholder="Informe sua telefone">
+        </div>
+  
+        <div>
+          <label for="dataNascimento">Data de Nascimento</label>
+          <input type="date" name="dataNascimento" id="dataNascimento"  placeholder="Informe sua telefone">
+        </div>
+  
+        <div>
+          <label for="feminino">Feminino</label>
+          <input type="radio"name="genero" id="genero"  placeholder="Informe seu sexo">
+          <label for="masculino">Masculino</label>
+          <input type="radio"name="masculino" id="masculino"  placeholder="Informe seu sexo">
+        </div>
+        
+  
+        <div>
+          <label for="estadocivil">Estado Civil</label>
+          <input type="number" name="estadocivil" id="estadocivil"  placeholder="Informe seu estado civil">
+        </div>
+  
+
+        <div>
+          <label for="read">Ultima experiência na loja</label>
+          <textarea type="text" name="read" id="read" readonly  placeholder="Ultima experiência na loja">
+            A ultima experiência foi muito positiva
+          </textarea>
+        </div>
+      </fieldset>
+
+
+
+    <h1>Endereço de Entrega</h1>
+      <fieldset>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" required name="cep" id="cep" placeholder="Informe seu CEP">
+        </div>
+  
+        <div>
+          <label for="tipologradouro">Tipo de logradouro</label>
+  
+          <select id="tipologradouro" name="tipologradouro">
+            <option value="rua">Rua</option>
+            <option value="avenida">Avenida</option>
+            <option value="travessa">Praça</option>
+          </select>
+        </div>
+  
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" name="logradouro" id="logradouro" required placeholder="Informe seu CPF">
+        </div>
+  
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" name="Bairro" id="Bairro" required placeholder="Informe seu Bairro">
+        </div>
+  
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" name="Bairro" id="Bairro" required placeholder="Informe seu Bairro">
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" name="cidade" id="cidade" required placeholder="Informe sua Cidade">
+        </div>
+  
+        <div>
+          <label for="state">Estado</label>
+          <input type="text" name="state" id="state" required placeholder="Informe seu estado">
+        </div>
+      </fieldset>
+
+      <h1>Campos Adicionais</h1>
+      <fieldset>
+        <div>
+          <label for="tipologradouro">Tipo de logradouro</label>
+          <select id="tipologradouro" name="tipologradouro">
+            <option value="rua">Rua</option>
+            <option value="avenida">Avenida</option>
+            <option value="travessa">Praça</option>
+          </select>
+        </div>
+        
+      </fieldset>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
